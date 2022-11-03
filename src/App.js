@@ -9,8 +9,6 @@ function App() {
   const [todoEditing, setTodoEditing] = useState(null);
   const [editingText, setEditingText] = useState('');
 
-  console.log('hello');
-
   useEffect(() => {
     const temp = JSON.stringify(todos)
     localStorage.setItem("todos", temp)
@@ -61,7 +59,7 @@ function App() {
 
   return (
     <div className='todo-app'>
-      <h1>T a s k i e r</h1>
+      <h1>Taskier ✏️</h1>
       <div className='todo-container'>
         <form onSubmit={handleSubmit}>
           <input
@@ -69,7 +67,7 @@ function App() {
             value={todo}
             onChange={(e) => setTodo(e.target.value)}
           />
-          <button className='button' type="submit">add task</button>
+          <button className='button add-task' type="submit">add task</button>
         </form>
         {todos.map((todo) => <div className='todo-item' key={todo.id}>
           <input
@@ -92,7 +90,7 @@ function App() {
           {todoEditing === todo.id ?
             (<button className='button button-submitEdits' onClick={() => editTodo(todo.id)}>Submit</button>)
             :
-            (<button className='button button-editTodo' onClick={() => setTodoEditing(todo.id)}>Edit Todo</button>)}
+            (<button className='button button-editTodo' onClick={() => setTodoEditing(todo.id)}>Edit</button>)}
 
         </div>)}
       </div>
