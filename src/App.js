@@ -7,7 +7,7 @@ function App() {
   const [todos, setTodos] = useState(savedTodos ? JSON.parse(savedTodos) : []);
   const [todo, setTodo] = useState("");
   const [todoEditing, setTodoEditing] = useState(null);
-  const [editingText, setEditingText] = useState(todos[0].text);
+  const [editingText, setEditingText] = useState('');
 
   useEffect(() => {
     const temp = JSON.stringify(todos)
@@ -54,7 +54,7 @@ function App() {
     })
     setTodos(updatedTodos)
     setTodoEditing(null)
-    setEditingText(todo.text)
+    setEditingText('')
   }
 
   return (
