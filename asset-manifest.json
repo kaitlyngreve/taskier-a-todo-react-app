@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/taskier-a-todo-react-app/static/css/main.85fc6918.css",
-    "main.js": "/taskier-a-todo-react-app/static/js/main.296ff533.js",
+    "main.js": "/taskier-a-todo-react-app/static/js/main.678aef53.js",
     "static/js/787.28cb0dcd.chunk.js": "/taskier-a-todo-react-app/static/js/787.28cb0dcd.chunk.js",
     "index.html": "/taskier-a-todo-react-app/index.html",
     "main.85fc6918.css.map": "/taskier-a-todo-react-app/static/css/main.85fc6918.css.map",
-    "main.296ff533.js.map": "/taskier-a-todo-react-app/static/js/main.296ff533.js.map",
+    "main.678aef53.js.map": "/taskier-a-todo-react-app/static/js/main.678aef53.js.map",
     "787.28cb0dcd.chunk.js.map": "/taskier-a-todo-react-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.85fc6918.css",
-    "static/js/main.296ff533.js"
+    "static/js/main.678aef53.js"
   ]
 }
